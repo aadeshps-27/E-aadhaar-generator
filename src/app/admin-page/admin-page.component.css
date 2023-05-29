@@ -1,0 +1,122 @@
+button {
+    --color: #26ad0b;
+    
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px ridge var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    box-shadow: 2px 3px 5px black ;
+   
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #19a30c;
+    transition:  0s;
+   }
+   .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  .input::placeholder {
+    color: transparent;
+  }
+  
+  .input:focus::placeholder {
+    color: rgb(131, 128, 128);
+  }
+  
+  .input:focus,.input:not(:placeholder-shown) {
+    background-color: #fff;
+    border: 1px solid rgb(98, 0, 255);
+    width: 290px;
+    cursor: none;
+    padding: 18px 16px 18px 40px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: -1;
+    fill: rgb(26, 129, 1);
+    border: 1px solid rgb(11, 68, 0);
+  }
+  
+  .input:hover + .icon {
+    transform: rotate(360deg);
+    transition: .2s ease-in-out;
+  }
+  
+  .input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .card1{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+ 
+    box-shadow: 2px 3px 5px black;
+    background-image: linear-gradient(180deg, rgb(241, 180, 65), white, green);
+  }
+  #buttonc{
+    height: 80px;
+    width: 200px;
+    font-weight: bolder;
+    border: 5px ridge rgb(0, 13, 128);
+  }

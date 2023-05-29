@@ -1,0 +1,43 @@
+<h3 class="text-center m-3 text-light"  style="font-weight: bolder; text-shadow:2px 3px 5px black ;">view E-card details </h3>
+
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+     <img [src]="details.photo" alt="" width="280px" style="box-shadow:  2px 3px 5px; border-left: 8px solid orange ; border-right: 8px solid green ;">
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container text-center  ">
+    <div class="row">
+      <div class="col">
+     
+      </div>
+      <div class="col-10">
+        <div class="list-group text-center m-5" style="box-shadow: 2px 3px 5px;border-left: 8px solid orange ; border-right: 8px solid green ;">
+            <button type="button" class="list-group-item list-group-item-action  text-dark" aria-current="true" style="background-image: linear-gradient(180deg,orange,white,green); border: 10px solid rgb(255, 255, 255);">
+           <h4 >E-card details</h4>
+            </button>
+            <button  type="button" class="list-group-item list-group-item-action"><h5>UID: &nbsp; {{details.id}}</h5></button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>Name:&nbsp;{{details.name}}</h5></button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>DOB: &nbsp;{{details.date}}</h5></button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>Phone:&nbsp;{{details.phone}} </h5></button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>Height:&nbsp;{{details.height}} cm</h5></button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>Occupation:&nbsp;{{details.occupation}}</h5> </button>
+            <button type="button" class="list-group-item list-group-item-action"><h5>Sex:&nbsp;{{groupName}}</h5></button> 
+           
+          </div>
+          <button class="noselect" routerLink="" style="margin-left: 70px;"><span class="text">close</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>
+      </div>
+      <div class="col">
+    
+      </div>
+    </div>
+  </div>

@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Prompt', sans-serif;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Dancing+Script&family=Graduate&family=Julius+Sans+One&family=Kaushan+Script&family=Libre+Baskerville&family=Mynerve&family=Nabla&family=Nanum+Myeongjo:wght@800&family=Press+Start+2P&family=Prompt:ital,wght@1,300&family=Source+Sans+Pro:ital@1&family=Teko:wght@300&display=swap');
+
+.body{
+   background-image: url(https://opticalcortex.com/app/uploads/2014/08/grad.jpg);
+ background-size: cover;
+
+    
+}

@@ -1,0 +1,121 @@
+
+<h2 class="text-center m-3 text-light"  style="font-weight: bolder; text-shadow:2px 3px 5px rgb(197, 250, 4) ;"> welcome to Admin-page </h2>
+<marquee behavior="" direction="" class="text-warning" style="font-weight:bolder; font-size: larger; text-shadow: 2px 3px 5px black;">.................................... Let started by clicking create E-card button it is  not exact vertion of e-card its just an demonstration ...................................... </marquee>
+<div class="container text-center">
+
+    <!-- {{allDetails | json}} -->
+    <div class="row">
+      <div class="col">
+      
+      </div>
+      <div class="col">
+        <button routerLink="/home/create" id="buttonc"> <i>Create Ecard</i>
+        </button>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+      
+      </div>
+      <div class="col">
+        <div class="container text-center">
+    <div class="row">
+      <div class="col">
+      
+      </div>
+      <div class="col"style="margin-left: 40px;">
+        <div class="input-container">
+            <input placeholder="Search Your Aadhaar Number..." class="input" name="text" type="text" (keyup)="inputBox($event)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <rect fill="white"></rect> <path d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+          </div>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="row m-3">
+      <div class="col-6 " *ngFor="let details of allDetails | filter:inputkey:'id'">
+     <div class="card1 m-3">
+        <div class="container m-3">
+            <div class="row">
+              <div class="col-5" style="float: left;">
+             <img  src="data:image/png;base64,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" alt="" width="20px"><B>  Republic of India</B> 
+              </div>
+              <div class="col">
+              
+              </div>
+              <div class="col-6">
+          <p style="font-size: small;">PERMENENT RESIDENT</p> 
+              </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+              Date of Expire: <br>
+              <img src="https://www.postbank.de/dam/postbank/bilder/services/privatkunden/karten-services/postbank-card/postbank-card-debitkarte-v-pay-emv-chip.png" alt="" width="80px" style="border-radius: 60px;">
+              </div>
+              <div class="col">
+               Card Name: <br>
+               Name: <b>{{details.name}}</b><br>
+               DOB: <b>{{details.date}}</b><br>
+               &nbsp;Uid:      <b>{{details.id}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+               height:&nbsp;<b>{{details.height}} cm</b>&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col">
+               <img  style="box-shadow: 2px 3px 5px;" [src]="details.photo" alt="" width="100px" height="100PX">
+              </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                 
+                  </div>
+                  <div class="col m-2">
+<button (click)="trash(details.id)" style="background: transparent;border: none;border-radius: 50px;"><a href="" style="text-decoration: none;"  style="color: rgb(206, 2, 2); text-decoration: none;">&nbsp;<i class="fa-solid fa-trash"></i> </a></button>
+                  </div>
+                  <div class="col">
+                    <img src="https://everydayframe.com/download/flags/022c-ashok-stambh-indian-flag-colour.png" alt="" width="40px">
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row m-1">
+                  <div class="col text-light">
+                    <p style="font-size:x-small">Card Issues Authority</p> 
+                  </div>
+                  <div class="col">
+                    &nbsp;&nbsp; <a routerLink="/home/view/{{details.id}}"><i class="fa-solid fa-eye" style="color: black; " ></i></a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a routerLink="/home/update/{{details.id}}"><i class="fa-solid fa-edit " style="color: black;">&nbsp;&nbsp;&nbsp;</i></a>
+                  </div>
+                  <div class="col  text-light">
+                <p style="font-size:x-small">Card Holder Singature</p> 
+                  </div>
+                </div>
+              </div>
+          </div>
+     </div>
+      </div>
+
+
+      <div class="col">
+     
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+  
